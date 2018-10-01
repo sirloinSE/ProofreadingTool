@@ -7,7 +7,12 @@ h2 {
   font-size: 50px;
 }
 textarea {
+  width: 600px;
+  height: 400px;
   border-radius: 5px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #btn {
@@ -16,10 +21,13 @@ textarea {
   border-radius: 5px;
   text-align: center;
   font-size: 25px;
+  float: right;
+  margin-right: 60px;
 }
 
 p {
-  font-size: 15px;
+  font-size: 18px;
+  margin-left: 40px;
 }
 
 img {
