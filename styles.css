@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+textarea {
+  border-radius: 5px;
+}
+
+#btn {
+  width: 120px;
+  height: 60px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 25px;
+}
+
+p {
+  font-size: 15px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  padding-left: 90px;
+}
