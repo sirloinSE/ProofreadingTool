@@ -18,12 +18,16 @@
     }
   }
 
-  // str の idx 文字目の次に val を挿入
-  function insertValue(str, idx){
-    return str.slice(0, idx) + ' ' + str.slice(idx);
-  };
+  // str の idx 文字目の次に半角スペースを挿入
+    function insertSpace(str, idx){
+      return str.slice(0, idx) + ' ' + str.slice(idx);
+    };
 
   document.getElementById('btn').addEventListener('click', function(){
+
+  //   document.getElementById('text2').value =
+  //            (document.getElementById('text1').value.match(/\w+(?=[\W$])|\W+(?=[\w$])/) || []).join(' ');
+
     // 入力されたテキスト
     var text = document.getElementById('text1').value;
     // 半角スペースを入れるインデックスを保持
@@ -46,12 +50,10 @@
         j++;
       }
     }
-    var k = 0;
+    // 半角スペース挿入
     for (var i = 0; i < spacenum.length; i++) {
-      // 半角スペース挿入
-      text = insertValue(text, spacenum[i] + k);
-      // 半角スペースを入れた分インデックスがずれる
-      k++;
+      var index = spacenum.length - i;
+      text = text.slice(0, index) + ' ' + text.slice(index);
     }
     document.getElementById('text2').value = text; //text2に出力
   });
